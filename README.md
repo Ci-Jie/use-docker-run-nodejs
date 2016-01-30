@@ -200,8 +200,7 @@ Hello world
 
 希望這個教學可以幫你在 Docker 建置與執行一個簡單的 Node.js 應用程式。
 
-你可以在下列連結中找到更多關於 Docker 與在 Docker 運行 Node.js 的資
-訊：
+你可以在下列連結中找到更多關於 Docker 與在 Docker 運行 Node.js 的資訊：
 
 - [Official Node.js Docker Image](https://registry.hub.docker.com/_/node/)
 - [Official Docker documentation](https://docs.docker.com/)
