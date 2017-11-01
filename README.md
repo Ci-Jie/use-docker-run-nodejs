@@ -8,7 +8,7 @@ Docker 允許你將應用程式與相關套件打包並轉變成標準化的元�
 > - container 是一個 stripped-to-basics 版本的 linux 作業系統。
 > - image 是一個讓你載入到 container 的軟體。
 
-##Create the Node.js app
+## Create the Node.js app
 
 首先，建立一個目錄給所有檔案存取，在這個目錄建立一個 `package.json` 檔案，這個檔案描述你的應用與記錄相關的套件。
 
@@ -50,7 +50,7 @@ console.log('Running on http://localhost:' + PORT);
 
 接下來的步驟，我們將探討如何在 Docker container 中使用官方的 Docker image 執行這個 app。首先你需要為你的 app 建立一個 Docker image。
 
-##Creating a Dockerfile
+## Creating a Dockerfile
 
 建立一個名字是 `Dockerfile` 的空檔案：
 
@@ -139,7 +139,7 @@ node                            argon      539c0211cd76    3 weeks ago
 <your username>/node-web-app    latest     d64d3505b0d2    1 minute ago
 ```
 
-##Run the image
+## Run the image
 
 在獨立 container 中使用 `-d` 可以讓你的 image 執行於背景模式下。 `-p` 旗標可以重新對應 public port 與 private port。使用以下命令執行你之前所建置的 image：
 
@@ -167,7 +167,7 @@ Running on http://localhost:8080
 $ docker exec -it <container id> /bin/bash
 ```
 
-##Test
+## Test
 
 
 若要測試你的 app，首先，必須先取得你 app 對應 Docker 的 port：
